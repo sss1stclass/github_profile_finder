@@ -42,7 +42,7 @@ input{
     font-weight: 700;
     margin-top: 1rem;
     padding: 0.7rem;
-    width: 50%;
+    width: 20%;
     border: 2px solid black;
 }
 .rest{
@@ -53,3 +53,16 @@ input{
     margin-top: 0.5rem;
 }
 
+
+@media only screen and (max-width: 600px) {
+    body {
+     
+    }   
+    h1{
+        font-size: 1.5rem;
+    }
+    input{
+       width: 80%; 
+    }
+  }
+  
