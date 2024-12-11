@@ -20,21 +20,8 @@ function handleclicked(event) {
 
     xhr.onload = function () {
       let userData = JSON.parse(xhr.response);
+      console.log(userData);
       displayUI(userData);
-
-      // console.log(usdata);
-      //   console.log(userData.login);
-      // console.log(userData.node_id);
-    };
-
-    xhr.onloadstart = function () {
-      console.log("Loading started");
-    };
-    xhr.onloadend = function () {
-      console.log("The site is completely loaded");
-    };
-    xhr.onerror = function () {
-      console.log("Something went wrong");
     };
 
     xhr.send();
@@ -43,7 +30,3 @@ function handleclicked(event) {
 }
 
 input.addEventListener("keyup", handleclicked);
-
-// 2ALR09MeDf3v44ty98LMUOBGDOm4Twy83hB1EvRdzls  ----------------access key
-
-// https://api.unsplash.com/photos/random
